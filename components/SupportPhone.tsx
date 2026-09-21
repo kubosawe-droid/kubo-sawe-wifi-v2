@@ -1,8 +1,8 @@
 export default function SupportPhone() {
   return (
-    <div className="mt-8 p-6 bg-cyan-500/10 rounded-2xl border border-cyan-400/20 text-center w-full flex flex-col items-center justify-center">
-      <p className="text-cyan-300/70 text-sm mb-2">Piga simu kwa msaada</p>
-      <a href="tel:+255684767112" className="text-xl font-bold text-white tracking-wider hover:text-cyan-300 transition-colors">
+    <div style={{textAlign:'center', marginTop:'30px', padding:'20px', border:'1px solid #22d3ee', borderRadius:'16px'}}>
+      <p style={{color:'#22d3ee', fontSize:'14px'}}>Piga simu kwa msaada</p>
+      <a href="tel:+255684767112" style={{color:'white', fontSize:'22px', fontWeight:'bold', display:'block', marginTop:'8px'}}>
         0684767112
       </a>
     </div>
