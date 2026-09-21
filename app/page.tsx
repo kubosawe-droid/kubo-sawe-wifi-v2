@@ -1,16 +1,13 @@
-import WelcomeText from "@/components/WelcomeText";
+export const dynamic = 'force-dynamic';
 import SupportPhone from "@/components/SupportPhone";
-import { formatDuration } from "@/lib/formatDuration";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-6">
-      <WelcomeText />
-      <div className="mt-6 p-4 bg-gray-900 rounded-xl border border-gray-700 text-center">
-        Mfano: {formatDuration(60)} na {formatDuration(120)}
-      </div>
+    <div style={{minHeight:'100vh', background:'black', color:'white', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:'20px'}}>
+      <h1 style={{fontSize:'24px', fontWeight:'bold', color:'#22d3ee'}}>KUBO SAWE WIFI</h1>
+      <p style={{marginTop:'12px', color:'#aaa'}}>Karibu kwenye mtandao bora</p>
       <SupportPhone />
-      <p className="mt-4 text-xs text-gray-500 text-center">KUBO SAWE WiFi - 0684767112</p>
+      <p style={{marginTop:'16px', fontSize:'12px', color:'#666'}}>Piga: 0684767112</p>
     </div>
   );
 }
